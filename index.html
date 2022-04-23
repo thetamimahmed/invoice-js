@@ -21,8 +21,8 @@
     <!-- main section  -->
     <main class="container my-3">
         <!-- input data section  -->
-        <section class="container ">
-            <div class="color3 pb-2">
+        <section class="container">
+            <div class="color3 pb-2 rounded-bottom">
                 <p class="text-center color1 text-white p-3">Please enter the data....</p>
                 <!-- textarea input  -->
                 <div class="input-group container">
@@ -61,10 +61,82 @@
                 </div>
             </div>
         </section>
+
+        <!-- invoice section  -->
+        <section class="color4 mt-5 py-3">
+            <div class="container">
+                <h2 class="text-white">Invoice: #4723192</h2>
+                <hr>
+                <div class="container overflow-hidden">
+                    <div class="row gx-5 gy-3">
+                    <div class="col">
+                    <div class="p-3 rounded h-100 color1 text-warning">
+                        Date: <span id="date"></span>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="p-3 rounded h-100 color1 text-warning">
+                        Invoice To: <span id="invoice-info"></span>
+                    </div>
+                    </div>   
+                    <div class="col">
+                    <div class="p-3 rounded h-100 color1 text-warning">
+                        Seller.
+                        <p class="text-white">abcd inc hellow@apexo.com 16 ctg, Bangladesh</p>
+                    </div>
+                    </div>   
+                    </div>
+                </div>
+                <!-- invoice table  -->
+                <table class="table bg-white mt-4 text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="info-table">
+                        
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td colspan="3" class="text-end fw-bold">Subtotal</td>
+                            <td colspan="3" class="text-right" id="subtotal">$0</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-end fw-bold">Tax</td>
+                            <td colspan="3" class="text-right" id="tax">$0</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-end fw-bold">Grand Total</td>
+                            <td colspan="3" class="text-right fw-bold" id="total">$0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+              <!-- bank transfer and total amount  -->
+              <div class="text-white color1 p-3 d-flex align-items-center justify-content-between">
+                  <div>
+                      <p class="text-warning">Bank Transfer</p>
+                      <p>Account Name: Tamim Ahmed Account Number:954323456453</p>
+                      <p>Code: 4354363456</p>
+                  </div>
+                  <div>
+                      <p class="text-warning">Total Amount</p>
+                      <p>$<span class="fs-1 fw-bold text-warning" id="total-amount">0</span> <br> Taxes Included</p>
+                  </div>
+              </div>
+        </section>
     </main>
 
 
       <!-- js file link  -->
+      <script>
+          const showDate = new Date();
+          document.getElementById('date').innerText = showDate.toLocaleDateString();
+      </script>
       <script src="app.js"></script>
 </body>
 </html>
