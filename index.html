@@ -14,9 +14,55 @@
 </head>
 <body>
     <!-- header section -->
-    <header class="color1 p-3">
+    <header class="color2 p-3">
         <h1 class="text-center text-white"><i class="bi bi-receipt"></i> YOUR INVOICE</h1>
     </header>
+
+    <!-- main section  -->
+    <main class="container my-3">
+        <!-- input data section  -->
+        <section class="container ">
+            <div class="color3 pb-2">
+                <p class="text-center color1 text-white p-3">Please enter the data....</p>
+                <!-- textarea input  -->
+                <div class="input-group container">
+                    <span class="input-group-text">Buyer details</span>
+                    <textarea id="input-details" class="form-control" aria-label="With textarea"></textarea>
+                </div>
+                <!-- product info input  -->
+                <div class="container">
+                    <p class="text-center color1 text-white py-2 my-3">Enter the item details....</p>
+                    <div class="w-50 m-auto text-center">
+                        <!-- item name input  -->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Item Name</span>
+                            <input id="item-name" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <!-- item price input  -->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Price</span>
+                            <input id="item-price" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <!-- item quantity input  -->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Quantity</span>
+                            <input id="item-quantity" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <!-- adding item button  -->
+                        <button class="btn btn-primary text-center">ADD ITEM</button>
+                    </div>
+                    <hr>
+                    <!-- marquee slide message  -->
+                    <div  class="text-center m-auto text-white" >
+                        <marquee width="60%" direction="left" height="100px">
+                            You can add more items using input fields..
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
 
       <!-- js file link  -->
       <script src="app.js"></script>
