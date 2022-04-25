@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invoice</title>
+    <title>Invoice Project</title>
     <!-- google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
     </header>
 
     <!-- main section  -->
-    <main class="container my-3">
+    <main class="container my-3" id="main">
         <!-- input data section  -->
         <section class="container">
             <div class="color3 pb-2 rounded-bottom">
@@ -113,15 +113,15 @@
                     <tbody>
                         <tr>
                             <td colspan="3" class="text-end fw-bold">Subtotal</td>
-                            <td colspan="3" class="text-right" id="subtotal">$0</td>
+                            <td colspan="3" class="text-right">$<span id="subtotal">0</span></td>
                         </tr>
                         <tr>
                             <td colspan="3" class="text-end fw-bold">Tax</td>
-                            <td colspan="3" class="text-right" id="tax">$0</td>
+                            <td colspan="3" class="text-right">$<span id="tax">0</span></td>
                         </tr>
                         <tr>
                             <td colspan="3" class="text-end fw-bold">Grand Total</td>
-                            <td colspan="3" class="text-right fw-bold" id="total">$0</td>
+                            <td colspan="3" class="text-right fw-bold">$<span id="total">0</span></td>
                         </tr>
                     </tbody>
                 </table>
